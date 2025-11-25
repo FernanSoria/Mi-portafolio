@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ilustración SVG simple y semántica relacionada con desarrollo web y apps -->
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#3a7bd5" />
+      <stop offset="100%" stop-color="#00d2ff" />
+    </linearGradient>
+    <filter id="f1" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="b" />
+      <feMerge>
+        <feMergeNode in="b" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fondo decorativo con líneas de circuito estilizadas -->
+  <g opacity="0.9">
+    <rect width="1200" height="800" fill="transparent" />
+    <g stroke="url(#g1)" stroke-width="2" stroke-linecap="round" opacity="0.18">
+      <path d="M60 120 L300 120 L300 260" />
+      <path d="M1100 680 L800 680 L800 540" />
+      <path d="M200 400 L420 400 L420 540" />
+      <path d="M650 60 L650 220 L920 220" />
+      <path d="M980 300 L980 420 L1100 420" />
+    </g>
+  </g>
+
+  <!-- Laptop con pantalla de código -->
+  <g transform="translate(160,230) scale(0.9)" filter="url(#f1)">
+    <rect x="0" y="0" width="420" height="260" rx="14" fill="url(#g1)" opacity="0.07" />
+    <rect x="16" y="18" width="388" height="196" rx="8" fill="#0b1220" />
+    <!-- Líneas de código -->
+    <g fill="#8fbef8" opacity="0.85">
+      <rect x="34" y="40" width="320" height="10" rx="4" />
+      <rect x="34" y="62" width="260" height="10" rx="4" />
+      <rect x="34" y="84" width="180" height="10" rx="4" />
+      <rect x="34" y="106" width="300" height="10" rx="4" />
+      <rect x="34" y="128" width="140" height="10" rx="4" />
+    </g>
+    <rect x="0" y="230" width="420" height="20" rx="8" fill="#0b1220" />
+  </g>
+
+  <!-- Smartphone al lado -->
+  <g transform="translate(640,260) scale(0.65)" filter="url(#f1)">
+    <rect x="0" y="0" width="140" height="260" rx="20" fill="#07101a" opacity="0.06" />
+    <rect x="18" y="28" width="104" height="184" rx="8" fill="#0b1220" />
+    <rect x="28" y="48" width="84" height="12" rx="6" fill="#8fbef8" opacity="0.9" />
+    <rect x="28" y="72" width="60" height="10" rx="5" fill="#8fbef8" opacity="0.6" />
+    <rect x="28" y="92" width="76" height="10" rx="5" fill="#8fbef8" opacity="0.5" />
+  </g>
+
+  <!-- Nube / despliegue -->
+  <g transform="translate(420,50) scale(0.9)" opacity="0.14">
+    <ellipse cx="220" cy="80" rx="90" ry="40" fill="url(#g1)" />
+    <rect x="145" y="100" width="150" height="18" rx="8" fill="#0b1220" />
+  </g>
+
+  <!-- Íconos pequeños: brackets y nube -->
+  <g transform="translate(960,100) scale(0.9)" opacity="0.9">
+    <text x="0" y="0" fill="#3a7bd5" font-size="64" font-family="monospace" opacity="0.22">{ }</text>
+  </g>
+
+  <!-- Firma visual (no visible por defecto) -->
+  <g transform="translate(20,720)" opacity="0.06">
+    <text x="0" y="0" fill="#00d2ff" font-size="18" font-family="sans-serif">desarrollo web • apps • ux</text>
+  </g>
+
+</svg>

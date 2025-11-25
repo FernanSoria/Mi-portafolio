@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fernán Soria</title>
+    <title>Fernán Soria Developer</title>
+    <!-- Favicon/logo en la pestaña -->
+    <link rel="icon" type="image/png" href="img/Logo-FS-sinfondo.png">
     <link rel="stylesheet" href="css/style.css">
     <!-- Enlaza con una biblioteca de iconos, por ejemplo, Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -15,7 +17,7 @@
     <!-- Encabezado (Header) y Navegación -->
     <header>
         <nav>
-            <div class="logo">FERNÁN SORIA</div>
+            <div class="logo"><img src="img/Logo-FS-sinfondo.png" alt="" height="50px" width="auto"></div>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#acerca-de">Acerca de Mí</a></li>
@@ -29,8 +31,8 @@
         <!-- Sección de Inicio (Hero Section) -->
         <section id="inicio">
             <div class="presentacion">
-                <h1>Hola, soy Fernán</h1>
-                <p>Desarrollador Web</p>
+                <h1>Hola, soy Fernán!<br>Software Developer</h1>
+                <p>Desarrollador Web<br>&<br>Apps</p>
                 <a href="#proyectos" class="btn">Ver Proyectos</a>
             </div>
         </section>
@@ -161,6 +163,7 @@
             <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
         </div>
         <button type="submit" class="btn">Enviar</button>
+        <div id="contact-success" class="contact-success" style="display:none;"></div>
     </form>
 
 </section>
@@ -169,12 +172,20 @@
 
     <!-- Pie de página (Footer) -->
     <footer>
-        <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
-        <div class="social-media">
-            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <p>&copy; 2025 Fernán Soria. Todos los derechos reservados.</p>
+    <!-- Ilustración decorativa semitransparente relacionada con desarrollo web/apps -->
+    <div class="decor-illustration" aria-hidden="true">
+        <img src="img/illustration-dev.svg" alt="" />
+    </div>
+
+    <script src="script.js"></script>
+        <div>
+            <a href="https://www.linkedin.com/in/fernan-soria-68a370300/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/FernanSoria" target="_blank"><i class="fab fa-github"></i></a>
         </div>
     </footer>
+
+
 
     <script src="js/js.js"></script>
 </body>
