@@ -1,3 +1,25 @@
+// Menú hamburguesa para navegación móvil
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  
+  if (hamburger && navMenu) {
+    hamburger.addEventListener('click', function() {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+    
+    // Cerrar menú al hacer clic en un link
+    const navLinks = navMenu.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+  }
+});
+
 // Interceptar el envío del formulario de contacto para evitar redirección y mostrar alerta
 document.addEventListener('DOMContentLoaded', function() {
 	const form = document.querySelector('.contact-form');
